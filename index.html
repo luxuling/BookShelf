@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>BookShelf</h1>
+    </nav>
+  </header>
+  <main>
+    <div class="add-book">
+      <button id="add-book">Add New Book</button>
+    </div>
+
+    <div class="search-book">
+      <h3>Search new book</h3>
+      <form action="">
+        <input type="text" placeholder="Input name of book" id="search-input">
+        <button id="search-btn"><span class="material-symbols-outlined">
+          search
+          </span></button>
+      </form>
+    </div>
+
+    <div class="container">
+      <div class="unfinished">
+        <h4 class="title-box">Unfinished book</h4>
+        <div class="wrapper">
+          
+        </div>
+      </div>
+
+      <div class="finished">
+        <h4 class="title-box">Finished book</h4>
+        <div class="wrapper">
+          
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <section class="form" id="form">
+    <div class="card">
+      <button id="close-form">x</button>
+      <form action="">
+        <input type="text" placeholder="title" id="title">
+        <input type="text" placeholder="author" id="author">
+        <input type="number" placeholder="puplished" id="date">
+        <p>is Finished?</p>
+        <input type="checkbox" name="" id="checkbox">
+        <input type="submit" value="Add" id="submit">
+      </form>
+    </div>
+  </section>
+
+  <div class="confirm" id="confirm">
+    <div class="card">
+      <h4>Are you sure want to remove this book</h4>
+      <div class="choice">
+        <button id="yes">Yes</button>
+        <button id="no">No</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="display-search" id="display-search">
+    <button class="close" id="close">Close</button>
+    <div class="card" id="card-search">
+
+    </div>
+  </div>
+  <script src="script/main.js"></script>
+</body>
+</html>
