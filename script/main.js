@@ -50,9 +50,9 @@ const addBook = () => {
   let id = makeId()
   let title = document.getElementById("title").value
   let author = document.getElementById("author").value  
-  let date = document.getElementById("date").value
+  let year = document.getElementById("date").value
   let checkboxVal = checkThis()
-  let objData = generateObject(id, title, author, date, checkboxVal)
+  let objData = generateObject(id, title, author, year, checkboxVal)
   listBook.push(objData)
   
   document.dispatchEvent(new Event(RENDER_EVENT))
@@ -70,7 +70,7 @@ const makeBookList = (objData)=>{
   author.innerText = `Author: ${objData.author}`
 
   const date = document.createElement("p")
-  date.innerText = `Published: ${objData.date}`
+  date.innerText = `Published: ${objData.year}`
 
   book.append(title, author, date)
 
